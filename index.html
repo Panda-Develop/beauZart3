@@ -1,16 +1,36 @@
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">    
-    </head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    <script>
 
-    <body>
-        <div id="container">
-            <header></header>
-            <main>
-                <section class="half"></section>
-                <section class="half"></section>
-            </main>
-        </div>
-    </body>
+      function onwheelEvent(event) { //Decter le nombre de pixel et adapter le sections ainsi que le footer (translate)
+        var height = document.body.clientHeight;
+        var y = event.deltaY
+        
+        height = height - y;
+
+        document.getElementById('section').style = "transform: translateY("+height+"px) translateZ(0px);" ;
+      }
+    
+      function init() { //Decter la taille de la fenêtre et à adapter le sections ainsi que le footer (translate)
+        var height = document.body.clientHeight;
+
+        document.getElementById('section').style = "transform: translateY("+height+"px) translateZ(0px);" ;
+      }
+
+      
+    </script>
+
+  </head>
+
+
+  <body onload="init()" onmousewheel="onwheelEvent(event)">
+    <section id="section">
+
+    </section>
+
+    <footer id="footer">
+    </footer>
+  </body>
 
 </html>
