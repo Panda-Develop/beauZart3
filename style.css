@@ -1,3 +1,53 @@
 body {
-    background-color: lightblue;
+    background-color: transparent;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+#id1 {
+    background-image: url('./1.jpg');
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
+    min-width: 100%;
+}
+
+#id2 {
+    background-image: url('./2.jpg');
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
+    min-width: 100%;
+}
+
+.text {
+    background-color: #fff;
+    width: 30%;
+    z-index: 1;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 600px;
+    padding-right: 1600px;
+}
+
+.arrowleft {
+    padding: 10px;
+    left:0;
+    color: white;
+    cursor: pointer;
+}
+
+.arrowright {
+    padding: 10px;
+    right:0;
+    color: white;
+    cursor: pointer;
 }
