@@ -1,6 +1,8 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">  
+    <meta charset="utf-8">
+    <script src="./comptearebour.js"> </script>
     <script>
 
       var height = 0;
@@ -83,6 +85,7 @@
       <div class="container"> 
         <div id=id1> 
           <span class="arrowright" onclick="avancer()"> <a> Avancer </a> </span>
+          <div id="compte_a_rebours"><noscript>Fin de l'évènement le 1er janvier 2018.</noscript></div>
           <div class="text">
 
             <center> <h1> Page 1  </h1> </center>
@@ -170,8 +173,9 @@
         var height = document.body.clientHeight;
         document.getElementsByClassName('text')[0].style = "transform: translateY("+height+"px)";
         document.getElementsByClassName('text')[1].style = "transform: translateY("+height+"px)";
+        compte_a_rebours()
       }
-  
+      
   </script>
 
 </html>

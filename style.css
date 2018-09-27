@@ -38,6 +38,15 @@ body {
     padding-right: 1600px;
 }
 
+#compte_a_rebours {
+    color: red;
+    text-align: center;
+    font-size: 35px;
+    background-color: black;
+    widows: 100%;
+}
+
+
 .arrowleft {
     padding: 10px;
     left:0;
