@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule ^page1$ index.php#id1
+RewriteRule ^page2$ index.php#id2
